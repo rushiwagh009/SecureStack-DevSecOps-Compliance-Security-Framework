@@ -1,0 +1,56 @@
+# Sensitive Data - NEVER commit
+*.key
+*.pem
+*.p12
+*.pfx
+*credentials*
+*password*
+*secret*
+.env
+.env.*
+
+# Live Exploit Results - Sanitize before committing
+**/live-results/
+**/scan-outputs/
+**/raw-captures/
+
+# Tool Temporary Files
+**/.burp/
+**/.zap/
+**/nmap-tmp/
+**/metasploit-tmp/
+
+# System Files
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.bak
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Excel temporary files
+~$*.xlsx
+~$*.xls
+
+# Backup Files
+*.backup
+*.old
+
+# Virtual Environments (if scripts use Python)
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+
+# Docker volumes (if any)
+.docker-data/
+
+# Personal Notes
+**/PRIVATE-NOTES.md
+**/TODO-PERSONAL.md
